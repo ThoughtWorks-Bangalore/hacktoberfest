@@ -160,12 +160,14 @@ class Index extends React.Component {
 
           <section id="cta" className="main special">
             <header className="major">
-              <h2>Congue imperdiet</h2>
-              <p>
-                Donec imperdiet consequat consequat. Suspendisse feugiat congue
-                <br />
-                posuere. Nulla massa urna, fermentum eget quam aliquet.
-              </p>
+              <h2>Location</h2>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6714318530103!2d77.6266601150151!3d12.928826890884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1685184eb601%3A0xc902779873f99e8f!2sThoughtWorks%20Koramangala!5e0!3m2!1sen!2sin!4v1568744019247!5m2!1sen!2sin"
+                width="700"
+                height="300"
+                frameborder="0"
+                allowfullscreen=""
+              ></iframe>
             </header>
             <footer className="major">
               <ul className="actions">
