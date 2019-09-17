@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
-import pic01 from '../assets/images/pic01.jpg'
+import people from '../assets/images/people.jpg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
@@ -41,24 +41,21 @@ class Index extends React.Component {
             <div className="spotlight">
               <div className="content">
                 <header className="major">
-                  <h2>Ipsum sed adipiscing</h2>
+                  <h2>Introduction</h2>
                 </header>
                 <p>
-                  Sed lorem ipsum dolor sit amet nullam consequat feugiat
-                  consequat magna adipiscing magna etiam amet veroeros. Lorem
-                  ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem
-                  ipsum dolor sit amet aliquam.
+                An open event for people to come and contribute
+                to Open Source as part of Hacktoberfest.
                 </p>
-                <ul className="actions">
-                  <li>
-                    <Link to="/generic" className="button">
-                      Learn More
-                    </Link>
-                  </li>
-                </ul>
+                <p>
+                Hacktoberfest is a month-long celebration of open source software run by DigitalOcean and Dev.
+                It happens in the month of October every year.
+                ThoughtWorks Bangalore is hosting the event to promote and support contributing to Open Source!
+                The event is organized by a passionate group of open sorcerers and sponsored by ThoughtWorks.
+                </p>
               </div>
               <span className="image">
-                <img src={pic01} alt="" />
+                <img src={people} alt="" />
               </span>
             </div>
           </section>
