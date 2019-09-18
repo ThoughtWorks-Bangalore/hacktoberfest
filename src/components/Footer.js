@@ -28,7 +28,7 @@ const Footer = props => (
     </section>
     <section>
       <h2>Sponsored by</h2>
-      <img style={{
+      <img alt="Thoughtworks logo" style={{
         width: '30vw'
       }} src={logo} />
     </section>
