@@ -1,25 +1,137 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 import Layout from '../components/layout'
-import HeaderGeneric from '../components/HeaderGeneric'
-import pic04 from '../assets/images/pic04.jpg'
+import people from '../assets/images/people.jpg'
 
-class Generic extends React.Component {
+class Agenda extends React.Component {
   render() {
-
     return (
       <Layout>
-        <Helmet title="Generic Page Title" />
-        <HeaderGeneric />
+        <Helmet title="Agenda" />
+        <header id="header">
+          <h1>Agenda</h1>
+          <p>Here's what we're planning</p>
+        </header>
         <div id="main">
           <section id="content" className="main">
-            <span className="image main"><img src={pic04} alt="" /></span>
-            <h2>Magna feugiat lorem</h2>
-            <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-            <p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-            <h2>Tempus veroeros</h2>
-            <p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+            <span className="image main">
+              <img src={people} alt="" />
+            </span>
+            <VerticalTimeline>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{
+                  background: 'rgb(33, 150, 243)',
+                  color: '#fff',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid  rgb(33, 150, 243)',
+                }}
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Creative Director
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  Miami, FL
+                </h4>
+                <p>
+                  Creative Direction, User Experience, Visual Design, Project
+                  Management, Team Leading
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="2010 - 2011"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Art Director
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  San Francisco, CA
+                </h4>
+                <p>
+                  Creative Direction, User Experience, Visual Design, SEO,
+                  Online Marketing
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="2008 - 2010"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Web Designer
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  Los Angeles, CA
+                </h4>
+                <p>User Experience, Visual Design</p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="2006 - 2008"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Web Designer
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  San Francisco, CA
+                </h4>
+                <p>User Experience, Visual Design</p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="April 2013"
+                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Content Marketing for Web, Mobile and Social Media
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  Online Course
+                </h4>
+                <p>Strategy, Social Media</p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="November 2012"
+                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Agile Development Scrum Master
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  Certification
+                </h4>
+                <p>Creative Direction, User Experience, Visual Design</p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--education"
+                date="2002 - 2006"
+                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Bachelor of Science in Interactive Digital Media Visual
+                  Imaging
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  Bachelor Degree
+                </h4>
+                <p>Creative Direction, Visual Design</p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+              />
+            </VerticalTimeline>
           </section>
         </div>
       </Layout>
@@ -27,4 +139,4 @@ class Generic extends React.Component {
   }
 }
 
-export default Generic
+export default Agenda

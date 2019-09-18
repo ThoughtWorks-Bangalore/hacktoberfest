@@ -15,6 +15,7 @@
     "react-helmet": "^5.2.1",
     "react-scroll-to-element": "^0.2.0",
     "react-scrollspy": "^3.4.0",
+    "react-vertical-timeline-component": "^2.5.0",
     "react-waypoint": "^9.0.2"
   },
   "keywords": [
