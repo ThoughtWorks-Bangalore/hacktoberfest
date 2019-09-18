@@ -4,10 +4,19 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
-import 'react-vertical-timeline-component/style.min.css'
 import Layout from '../components/layout'
-import people from '../assets/images/people.jpg'
+import 'react-vertical-timeline-component/style.min.css'
+import bike from '../assets/images/bike.jpg'
 
+const COLOURS = {
+  welcome: 'orange',
+  intro: 'aquamarine',
+  oss: 'lightblue',
+  workshop: 'yellow',
+  demo: 'violet',
+  lunch: 'skyblue',
+  hack: 'lavender',
+}
 class Agenda extends React.Component {
   render() {
     return (
@@ -20,117 +29,134 @@ class Agenda extends React.Component {
         <div id="main">
           <section id="content" className="main">
             <span className="image main">
-              <img src={people} alt="" />
+              <img src={bike} alt="" />
             </span>
+            <p>
+              Total duration of the event would be from <strong>9 am</strong> to{' '}
+              <strong>5 pm</strong>.
+            </p>
             <VerticalTimeline>
               <VerticalTimelineElement
-                className="vertical-timeline-element--work"
+                className="vertical-timeline-element"
                 contentStyle={{
-                  background: 'rgb(33, 150, 243)',
-                  color: '#fff',
+                  background: COLOURS.welcome,
+                  color: '#000000',
                 }}
                 contentArrowStyle={{
-                  borderRight: '7px solid  rgb(33, 150, 243)',
+                  borderRight: '7px solid rgb(33, 150, 243)',
                 }}
-                date="2011 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                date="9 am"
+                iconStyle={{ background: COLOURS.welcome, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">Welcome</h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  <p>
+                    <ul>
+                      <li>Greetings and formalities</li>
+                      <li>Overview of programming</li>
+                      <li>Code of conduct</li>
+                    </ul>
+                  </p>
+                </h4>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.intro,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="9:15 am"
+                iconStyle={{ background: COLOURS.intro, color: '#fff' }}
               >
                 <h3 className="vertical-timeline-element-title">
-                  Creative Director
+                  Introduction to Hacktoberfest
                 </h3>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.oss,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="9:30 am"
+                iconStyle={{ background: COLOURS.oss, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Introduction to Open Source
+                </h3>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.workshop,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="9:45 am"
+                iconStyle={{ background: COLOURS.workshop, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">Workshop</h3>
                 <h4 className="vertical-timeline-element-subtitle">
-                  Miami, FL
+                  How to contribute to Open Source
                 </h4>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.demo,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="10:00 am"
+                iconStyle={{ background: COLOURS.demo, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">Demos</h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  Open Source project showcase
+                </h4>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.lunch,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="12:00 pm"
+                iconStyle={{ background: COLOURS.lunch, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">Lunch</h3>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.hack,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="1:00 pm"
+                iconStyle={{ background: COLOURS.hack, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">Hack time</h3>
                 <p>
-                  Creative Direction, User Experience, Visual Design, Project
-                  Management, Team Leading
+                  Facilitate the formation of groups by interest and hack
+                  together.
                 </p>
               </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2010 - 2011"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Art Director
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  San Francisco, CA
-                </h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design, SEO,
-                  Online Marketing
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2008 - 2010"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Web Designer
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  Los Angeles, CA
-                </h4>
-                <p>User Experience, Visual Design</p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2006 - 2008"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Web Designer
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  San Francisco, CA
-                </h4>
-                <p>User Experience, Visual Design</p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="April 2013"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Content Marketing for Web, Mobile and Social Media
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  Online Course
-                </h4>
-                <p>Strategy, Social Media</p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="November 2012"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Agile Development Scrum Master
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  Certification
-                </h4>
-                <p>Creative Direction, User Experience, Visual Design</p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="2002 - 2006"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Bachelor of Science in Interactive Digital Media Visual
-                  Imaging
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  Bachelor Degree
-                </h4>
-                <p>Creative Direction, Visual Design</p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-              />
             </VerticalTimeline>
           </section>
         </div>

@@ -69,3 +69,9 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/wrapper';
+
+	$purple_palette: (bg:	#935d8c);
+	.purple {
+		@include color(_palette((bg: red, border: blue)));
+		@debug _palette(bg red);
+	}

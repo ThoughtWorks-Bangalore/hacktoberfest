@@ -2,7 +2,6 @@ import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
-import people from '../assets/images/people.jpg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
@@ -57,9 +56,7 @@ class Index extends React.Component {
                   sponsored by ThoughtWorks.
                 </p>
               </div>
-              <span className="image">
-                <img src={people} alt="" />
-              </span>
+              <span className="icon major style1 fa-heart"></span>
             </div>
           </section>
 
@@ -69,9 +66,9 @@ class Index extends React.Component {
             </header>
             <ul className="features">
               <li>
-                <span className="icon major style1 fa-code"></span>
+                <span className="icon major style6 fa-code"></span>
                 <h3>
-                  <Link to="agenda" className="button">
+                  <Link to="/agenda" className="button">
                     Agenda
                   </Link>
                 </h3>
@@ -85,7 +82,7 @@ class Index extends React.Component {
               <li>
                 <span className="icon major style5 fa-building"></span>
                 <h3>
-                  <Link to="other-offices" className="button purple">
+                  <Link to="/other-offices" className="button purple">
                     Our other offices
                   </Link>
                 </h3>
@@ -100,8 +97,9 @@ class Index extends React.Component {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6714318530103!2d77.6266601150151!3d12.928826890884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1685184eb601%3A0xc902779873f99e8f!2sThoughtWorks%20Koramangala!5e0!3m2!1sen!2sin!4v1568744019247!5m2!1sen!2sin"
                 width="700"
                 height="300"
-                frameborder="0"
-                allowfullscreen=""
+                frameBorder="0"
+                allowFullScreen=""
+                title="location"
               ></iframe>
             </header>
             <footer className="major">
