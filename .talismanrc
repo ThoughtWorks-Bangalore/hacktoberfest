@@ -2,3 +2,6 @@ fileignoreconfig:
 - filename: src/assets/css/font-awesome.min.css
   checksum: d07b65fb3b150402c676c25db73c032265814c94f982db5b57a7af7fe1618081
   ignore_detectors: []
+- filename: package-lock.json
+  checksum: 8e5b9ecf40cf9f9af7a84f230438c1cc4adb07debafca8527c0290346b34e113
+  ignore_detectors: []
