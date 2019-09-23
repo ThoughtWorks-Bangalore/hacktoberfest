@@ -10,4 +10,4 @@ Run `gatsby develop` in the terminal to start the dev site.
 npm run deploy
 ```
 
-Created using [gatsby-starter-stellar](https://github.com/codebushi/gatsby-starter-stellar`).
+Created using [gatsby-starter-stellar](https://github.com/codebushi/gatsby-starter-stellar).
