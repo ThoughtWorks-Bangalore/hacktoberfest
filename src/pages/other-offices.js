@@ -11,7 +11,6 @@ class OtherOffices extends React.Component {
         <Helmet title="Other offices" />
         <header id="header">
           <h1>Other offices</h1>
-          <p>Our other locations</p>
         </header>
         <div id="main">
           <section id="content" className="main">
