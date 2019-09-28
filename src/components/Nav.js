@@ -32,13 +32,7 @@ const Nav = props => (
         <Link to="/other-offices">Other offices</Link>
       </li>
       <li>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="http://thoughtworks-bangalore.github.io/geeknight"
-        >
-          Geeknight
-        </a>
+        <Link to="/register">Register</Link>
       </li>
     </Scrollspy>
   </nav>
