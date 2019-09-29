@@ -15,14 +15,16 @@ class Register extends React.Component {
         </header>
         <div id="main">
           <section id="content" className="main">
-          <span className="image main">
+            <span className="image main">
               <img src={boat} alt="" />
             </span>
             <span className="image main"></span>
-            <div style={{
+            <div
+              style={{
                 display: 'flex',
-                justifyContent: 'center'
-            }}>
+                justifyContent: 'center',
+              }}
+            >
               <iframe
                 title="Registration form"
                 src="https://docs.google.com/forms/d/e/1FAIpQLScC1q3nUF6SGfDgO5OUz0j5LkLFup9WBHUg89290QIvJnsoNA/viewform?embedded=true"
