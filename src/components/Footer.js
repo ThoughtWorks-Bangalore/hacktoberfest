@@ -24,6 +24,14 @@ const Footer = props => (
             <span className="label">GitHub</span>
           </a>
         </li>
+        <li>
+          <a
+            href="https://www.thoughtworks.com/"
+            className="icon fa-link alt"
+          >
+            <span className="label">ThoughtWorks</span>
+          </a>
+        </li>
       </ul>
     </section>
     <section>
