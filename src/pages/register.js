@@ -19,6 +19,13 @@ class Register extends React.Component {
               <img src={boat} alt="" />
             </span>
             <span className="image main"></span>
+            <p>
+              Please read our{' '}
+              <a href="https://do.co/hacktoberconduct">
+                Events Code of Conduct
+              </a>{' '}
+              before attending. Happy Hacking!
+            </p>
             <div
               style={{
                 display: 'flex',
