@@ -56,12 +56,24 @@ class Index extends React.Component {
                 </p>
                 <p>
                   It is a month-long celebration of open source software run by{' '}
-                  <a href="https://www.digitalocean.com/">DigitalOcean</a> and
-                  <a href="https://dev.to/">Dev</a> which happens in the month of
-                  October every year. ThoughtWorks Bangalore is hosting the
+                  <a href="https://www.digitalocean.com/">DigitalOcean</a> and{' '}
+                  <a href="https://dev.to/">Dev</a> which happens in the month
+                  of October every year. ThoughtWorks Bangalore is hosting the
                   event to promote and support contributing to Open Source! The
                   event is organized by a passionate group of ThoughtWorkers and
-                  is sponsored by <a href="https://www.thoughtworks.com/">ThoughtWorks</a>.
+                  is sponsored by{' '}
+                  <a href="https://www.thoughtworks.com/">ThoughtWorks</a>.
+                </p>
+                <p>
+                  For starters, head over to the{' '}
+                  <Link to="/register">registration</Link> page to register
+                  yourself for the event. You might also wanna check out{' '}
+                  <Link to="/agenda">what we have in store</Link>.
+                </p>
+                <p>
+                  Not in <em>namma</em> Bengaluru? Take a look at our{' '}
+                  <Link to="/other-offices">other offices</Link> which are also
+                  conducting the same event.
                 </p>
               </div>
               <span className="icon major style1 fa-heart"></span>
