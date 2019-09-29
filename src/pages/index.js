@@ -48,16 +48,20 @@ class Index extends React.Component {
                   <h2>Introduction</h2>
                 </header>
                 <p>
-                  An open event for people to come and contribute to Open Source
-                  as part of Hacktoberfest.
+                  <a href="https://hacktoberfest.digitalocean.com/">
+                    Hacktoberfest
+                  </a>{' '}
+                  is an open event for people to come and contribute to Open
+                  Source.
                 </p>
                 <p>
-                  Hacktoberfest is a month-long celebration of open source
-                  software run by DigitalOcean and Dev. It happens in the month
-                  of October every year. ThoughtWorks Bangalore is hosting the
+                  It is a month-long celebration of open source software run by{' '}
+                  <a href="https://www.digitalocean.com/">DigitalOcean</a> and
+                  <a href="https://dev.to/">Dev</a> which happens in the month of
+                  October every year. ThoughtWorks Bangalore is hosting the
                   event to promote and support contributing to Open Source! The
-                  event is organized by a passionate group of open sorcerers and
-                  sponsored by ThoughtWorks.
+                  event is organized by a passionate group of ThoughtWorkers and
+                  is sponsored by <a href="https://www.thoughtworks.com/">ThoughtWorks</a>.
                 </p>
               </div>
               <span className="icon major style1 fa-heart"></span>
@@ -121,7 +125,7 @@ class Index extends React.Component {
                 title="location"
                 style={{
                   width: '100%',
-                  height: '300px'
+                  height: '300px',
                 }}
               ></iframe>
             </header>
