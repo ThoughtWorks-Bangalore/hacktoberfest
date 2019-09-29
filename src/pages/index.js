@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
 import Scroll from '../components/Scroll'
+import banner from '../assets/images/banner.png'
 
 class Index extends React.Component {
   constructor(props) {
@@ -38,6 +39,9 @@ class Index extends React.Component {
 
         <div id="main">
           <section id="intro" className="main">
+            <span className="image main">
+              <img src={banner} alt="" />
+            </span>
             <div className="spotlight">
               <div className="content">
                 <header className="major">
@@ -82,9 +86,25 @@ class Index extends React.Component {
               <li>
                 <span className="icon major style5 fa-building"></span>
                 <h3>
-                  <Link to="/other-offices" className="button purple">
+                  <Link to="/other-offices" className="button">
                     Our other offices
                   </Link>
+                </h3>
+              </li>
+              <li>
+                <span className="icon major style4 fa-user-plus"></span>
+                <h3>
+                  <Link to="/register" className="button">
+                    Register
+                  </Link>
+                </h3>
+              </li>
+              <li>
+                <span className="icon major style2 fa-balance-scale"></span>
+                <h3>
+                  <a href="https://do.co/hacktoberconduct" className="button">
+                    Code of conduct
+                  </a>
                 </h3>
               </li>
             </ul>
@@ -92,14 +112,17 @@ class Index extends React.Component {
 
           <section id="cta" className="main special">
             <header className="major">
-              <h2>Location</h2>
+              <h2>Venue</h2>
+              <p>19th October, 9 am to 5 pm</p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6714318530103!2d77.6266601150151!3d12.928826890884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1685184eb601%3A0xc902779873f99e8f!2sThoughtWorks%20Koramangala!5e0!3m2!1sen!2sin!4v1568744019247!5m2!1sen!2sin"
-                width="700"
-                height="300"
                 frameBorder="0"
                 allowFullScreen=""
                 title="location"
+                style={{
+                  width: '100%',
+                  height: '300px'
+                }}
               ></iframe>
             </header>
             <footer className="major">
