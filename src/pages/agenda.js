@@ -35,6 +35,12 @@ class Agenda extends React.Component {
               Total duration of the event would be from <strong>9 am</strong> to{' '}
               <strong>5 pm</strong>.
             </p>
+            <p>
+              Please don't forget to bring your own laptops{' '}
+              <span aria-label="wink" role="img">
+                😉
+              </span>
+            </p>
             <VerticalTimeline>
               <VerticalTimelineElement
                 className="vertical-timeline-element"
