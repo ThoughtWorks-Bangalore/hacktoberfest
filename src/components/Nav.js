@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Scrollspy from 'react-scrollspy'
 import Scroll from './Scroll'
 
@@ -23,6 +24,15 @@ const Nav = props => (
         <Scroll type="id" element="cta">
           <a href="/#">Venue</a>
         </Scroll>
+      </li>
+      <li>
+        <Link to="/register">Register</Link>
+      </li>
+      <li>
+        <Link to="/agenda">Agenda</Link>
+      </li>
+      <li>
+        <Link to="/other-offices">Other offices</Link>
       </li>
     </Scrollspy>
   </nav>
