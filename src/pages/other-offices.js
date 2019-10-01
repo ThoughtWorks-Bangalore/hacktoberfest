@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
+import { LINKS, PageNav } from '../components/PageNav'
 import lamp from '../assets/images/lamp.jpg'
 
 class OtherOffices extends React.Component {
@@ -12,6 +13,7 @@ class OtherOffices extends React.Component {
         <header id="header">
           <h1>Other offices</h1>
         </header>
+        <PageNav doNotShow={LINKS.otherOffices} />
         <div id="main">
           <section id="content" className="main">
             <span className="image main">

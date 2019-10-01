@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import Layout from '../components/layout'
+import { LINKS, PageNav } from '../components/PageNav'
 import 'react-vertical-timeline-component/style.min.css'
 import bike from '../assets/images/bike.jpg'
 
@@ -26,6 +27,7 @@ class Agenda extends React.Component {
           <h1>Agenda</h1>
           <p>Here's what we're planning</p>
         </header>
+        <PageNav doNotShow={LINKS.agenda} />
         <div id="main">
           <section id="content" className="main">
             <span className="image main">

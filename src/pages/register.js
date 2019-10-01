@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { LINKS, PageNav } from '../components/PageNav'
 
 import boat from '../assets/images/boat.jpg'
 
@@ -13,6 +14,7 @@ class Register extends React.Component {
         <header id="header">
           <h1>Register for Hacktoberfest</h1>
         </header>
+        <PageNav doNotShow={LINKS.register} />
         <div id="main">
           <section id="content" className="main">
             <span className="image main">
