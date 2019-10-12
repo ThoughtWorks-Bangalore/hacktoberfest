@@ -10,14 +10,16 @@ import 'react-vertical-timeline-component/style.min.css'
 import bike from '../assets/images/bike.jpg'
 
 const COLOURS = {
-  welcome: 'orange',
   intro: 'aquamarine',
   oss: 'lightblue',
   workshop: 'yellow',
-  demo: 'violet',
+  break: 'lightgreen',
+  find: 'orange',
   lunch: 'skyblue',
   hack: 'lavender',
+  wrap: 'violet'
 }
+
 class Agenda extends React.Component {
   render() {
     return (
@@ -47,36 +49,13 @@ class Agenda extends React.Component {
               <VerticalTimelineElement
                 className="vertical-timeline-element"
                 contentStyle={{
-                  background: COLOURS.welcome,
-                  color: '#000000',
-                }}
-                contentArrowStyle={{
-                  borderRight: '7px solid rgb(33, 150, 243)',
-                }}
-                date="9 am"
-                iconStyle={{ background: COLOURS.welcome, color: '#fff' }}
-              >
-                <h3 className="vertical-timeline-element-title">Welcome</h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  <p>
-                    <ul>
-                      <li>Greetings and formalities</li>
-                      <li>Overview of programming</li>
-                      <li>Code of conduct</li>
-                    </ul>
-                  </p>
-                </h4>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element"
-                contentStyle={{
                   background: COLOURS.intro,
                   color: '#000000',
                 }}
                 contentArrowStyle={{
                   borderRight: '7px solid rgb(33, 150, 243)',
                 }}
-                date="9:15 am"
+                date="9:45 am"
                 iconStyle={{ background: COLOURS.intro, color: '#fff' }}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -92,11 +71,11 @@ class Agenda extends React.Component {
                 contentArrowStyle={{
                   borderRight: '7px solid rgb(33, 150, 243)',
                 }}
-                date="9:30 am"
+                date="10 am"
                 iconStyle={{ background: COLOURS.oss, color: '#fff' }}
               >
                 <h3 className="vertical-timeline-element-title">
-                  Introduction to Open Source
+                  Talk on Open Source
                 </h3>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -108,30 +87,42 @@ class Agenda extends React.Component {
                 contentArrowStyle={{
                   borderRight: '7px solid rgb(33, 150, 243)',
                 }}
-                date="9:45 am"
+                date="10:30 am"
                 iconStyle={{ background: COLOURS.workshop, color: '#fff' }}
               >
-                <h3 className="vertical-timeline-element-title">Workshop</h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  How to contribute to Open Source
-                </h4>
+                <h3 className="vertical-timeline-element-title">
+                  Demo on contributing to Open Source
+                </h3>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element"
                 contentStyle={{
-                  background: COLOURS.demo,
+                  background: COLOURS.break,
                   color: '#000000',
                 }}
                 contentArrowStyle={{
                   borderRight: '7px solid rgb(33, 150, 243)',
                 }}
-                date="10:00 am"
-                iconStyle={{ background: COLOURS.demo, color: '#fff' }}
+                date="11 am"
+                iconStyle={{ background: COLOURS.break, color: '#fff' }}
               >
-                <h3 className="vertical-timeline-element-title">Demos</h3>
-                <h4 className="vertical-timeline-element-subtitle">
-                  Open Source project showcase
-                </h4>
+                <h3 className="vertical-timeline-element-title">Lunch</h3>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.find,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="11:15 am"
+                iconStyle={{ background: COLOURS.find, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Find your place to contribute
+                </h3>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element"
@@ -142,10 +133,12 @@ class Agenda extends React.Component {
                 contentArrowStyle={{
                   borderRight: '7px solid rgb(33, 150, 243)',
                 }}
-                date="12:00 pm"
+                date="12:30 pm"
                 iconStyle={{ background: COLOURS.lunch, color: '#fff' }}
               >
-                <h3 className="vertical-timeline-element-title">Lunch</h3>
+                <h3 className="vertical-timeline-element-title">
+                  Lunch
+                </h3>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element"
@@ -156,7 +149,7 @@ class Agenda extends React.Component {
                 contentArrowStyle={{
                   borderRight: '7px solid rgb(33, 150, 243)',
                 }}
-                date="1:00 pm"
+                date="1:30 pm"
                 iconStyle={{ background: COLOURS.hack, color: '#fff' }}
               >
                 <h3 className="vertical-timeline-element-title">Hack time</h3>
@@ -164,6 +157,20 @@ class Agenda extends React.Component {
                   Facilitate the formation of groups by interest and hack
                   together.
                 </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.wrap,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="4:30 pm"
+                iconStyle={{ background: COLOURS.wrap, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">Wrap up</h3>
               </VerticalTimelineElement>
             </VerticalTimeline>
           </section>
