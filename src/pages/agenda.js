@@ -10,6 +10,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import bike from '../assets/images/bike.jpg'
 
 const COLOURS = {
+  registration: 'lightpink',
   intro: 'aquamarine',
   oss: 'lightblue',
   workshop: 'yellow',
@@ -17,7 +18,7 @@ const COLOURS = {
   find: 'orange',
   lunch: 'skyblue',
   hack: 'lavender',
-  wrap: 'violet'
+  wrap: 'violet',
 }
 
 class Agenda extends React.Component {
@@ -46,6 +47,22 @@ class Agenda extends React.Component {
               </span>
             </p>
             <VerticalTimeline>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.registration,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="9:30 am"
+                iconStyle={{ background: COLOURS.registration, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Registration
+                </h3>
+              </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element"
                 contentStyle={{
@@ -106,7 +123,7 @@ class Agenda extends React.Component {
                 date="11 am"
                 iconStyle={{ background: COLOURS.break, color: '#fff' }}
               >
-                <h3 className="vertical-timeline-element-title">Lunch</h3>
+                <h3 className="vertical-timeline-element-title">Break time</h3>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element"
@@ -137,7 +154,7 @@ class Agenda extends React.Component {
                 iconStyle={{ background: COLOURS.lunch, color: '#fff' }}
               >
                 <h3 className="vertical-timeline-element-title">
-                  Lunch
+                  Lunch break
                 </h3>
               </VerticalTimelineElement>
               <VerticalTimelineElement
