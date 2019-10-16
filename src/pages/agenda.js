@@ -11,6 +11,7 @@ import bike from '../assets/images/bike.jpg'
 
 const COLOURS = {
   registration: 'lightpink',
+  greet: '#ebdef0',
   intro: 'aquamarine',
   oss: 'lightblue',
   workshop: 'yellow',
@@ -56,11 +57,27 @@ class Agenda extends React.Component {
                 contentArrowStyle={{
                   borderRight: '7px solid rgb(33, 150, 243)',
                 }}
-                date="9:30 am"
+                date="9:00 am"
                 iconStyle={{ background: COLOURS.registration, color: '#fff' }}
               >
                 <h3 className="vertical-timeline-element-title">
                   Registration
+                </h3>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element"
+                contentStyle={{
+                  background: COLOURS.greet,
+                  color: '#000000',
+                }}
+                contentArrowStyle={{
+                  borderRight: '7px solid rgb(33, 150, 243)',
+                }}
+                date="9:30 am"
+                iconStyle={{ background: COLOURS.greet, color: '#fff' }}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  Greetings
                 </h3>
               </VerticalTimelineElement>
               <VerticalTimelineElement
