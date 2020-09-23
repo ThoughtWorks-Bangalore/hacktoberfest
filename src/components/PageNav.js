@@ -6,7 +6,6 @@ const createLink = (route, label) => <Link to={route}>{label}</Link>
 const pages = {
   home: createLink('/', 'Home'),
   register: createLink('/register', 'Register'),
-  otherOffices: createLink('/other-offices', 'Other offices'),
   agenda: createLink('/agenda', 'Agenda'),
 }
 

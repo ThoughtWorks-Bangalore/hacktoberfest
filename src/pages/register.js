@@ -36,9 +36,9 @@ class Register extends React.Component {
             >
               <iframe
                 title="Registration form"
-                src="https://docs.google.com/forms/d/e/1FAIpQLScC1q3nUF6SGfDgO5OUz0j5LkLFup9WBHUg89290QIvJnsoNA/viewform?embedded=true"
+                src="https://docs.google.com/forms/d/e/1FAIpQLScspO9t4jFTeOEJGwtbX-CD3twdXDFRuoE4VlWxHmE1z77hqw/viewform?embedded=true"
                 width="640"
-                height="1664"
+                height="1700"
                 frameBorder="0"
                 marginHeight="0"
                 marginWidth="0"

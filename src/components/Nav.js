@@ -22,7 +22,7 @@ const Nav = props => (
       </li>
       <li>
         <Scroll type="id" element="cta">
-          <a href="/#">Venue</a>
+          <a href="/#">Date & Time</a>
         </Scroll>
       </li>
       <li>
@@ -30,9 +30,6 @@ const Nav = props => (
       </li>
       <li>
         <Link to="/agenda">Agenda</Link>
-      </li>
-      <li>
-        <Link to="/other-offices">Other offices</Link>
       </li>
     </Scrollspy>
   </nav>
